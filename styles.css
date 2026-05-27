@@ -493,6 +493,7 @@ body {
 .profile-main p {
   margin: 0 0 1.25rem;
   color: var(--text-muted);
+  text-align: justify;
 }
 
 .profile-main p strong {

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sistemas administrativos, aplicaciones web con Flask, facturación y ventas. Harbour, SQL Server, Python, PySide, pandas. Mantenimiento de equipos.">
+  <title>Sistemas Torres — Desarrollo y soporte técnico</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&family=Syne:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="Inicio">
+        <span class="logo-mark">&lt;/&gt;</span>
+        <span class="logo-text">Sistemas Torres</span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#tecnologias">Tecnologías</a>
+        <a href="#perfil">Perfil</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="nav-menu" class="nav-mobile" hidden>
+      <a href="#servicios">Servicios</a>
+      <a href="#tecnologias">Tecnologías</a>
+      <a href="#perfil">Perfil</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="hero-eyebrow hero-in">Programador · Gran Buenos Aires</p>
+          <h1 class="hero-in hero-in-d1">
+            Software que encaja en <span class="hero-accent">tu operación diaria</span>
+          </h1>
+          <p class="hero-lead hero-in hero-in-d2">
+            Armo sistemas de facturación, mostrador y gestión — en escritorio, web o Linux —
+            con la tecnología que cada caso pide. Si hace falta, también me ocupo de tus equipos:
+            un solo contacto para el programa y el hardware.
+          </p>
+          <div class="hero-actions hero-in hero-in-d3">
+            <a class="btn btn-primary" href="#contacto">Consultar proyecto</a>
+            <a class="btn btn-ghost" href="#servicios">Ver servicios</a>
+          </div>
+        </div>
+        <aside class="hero-panel hero-in hero-in-d2" aria-label="Resumen de servicios">
+          <p class="hero-panel-title">En la práctica, eso significa</p>
+          <ul class="hero-checklist">
+            <li>Facturación y punto de venta</li>
+            <li>Sistemas administrativos a medida</li>
+            <li>Apps con Harbour, Python o Flask</li>
+            <li>Linux, datos y soporte de PCs</li>
+          </ul>
+        </aside>
+      </div>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-alt" aria-hidden="true"></div>
+    </section>
+
+    <section id="servicios" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Servicios</h2>
+        <p class="section-intro reveal">Trabajo orientado a negocios que necesitan software estable y soporte cercano.</p>
+        <ul class="cards reveal-stagger">
+          <li class="card">
+            <span class="card-icon" aria-hidden="true">⌨</span>
+            <h3>Sistemas administrativos</h3>
+            <p>Aplicaciones de gestión en formato consola o ventana, adaptadas al flujo de trabajo de cada cliente.</p>
+          </li>
+          <li class="card">
+            <span class="card-icon" aria-hidden="true">🧾</span>
+            <h3>Facturación y ventas</h3>
+            <p>Sistemas de facturación y punto de venta (mostrador), desarrollados con Harbour y bases SQL Server o SQLite.</p>
+          </li>
+          <li class="card">
+            <span class="card-icon" aria-hidden="true">🐍</span>
+            <h3>Aplicaciones Python</h3>
+            <p>Desarrollos de escritorio con Python y PySide para interfaces gráficas modernas y multiplataforma.</p>
+          </li>
+          <li class="card">
+            <span class="card-icon" aria-hidden="true">🌐</span>
+            <h3>Aplicaciones web</h3>
+            <p>Sitios y sistemas web con Python Flask; procesamiento y reportes de datos con pandas cuando hace falta.</p>
+          </li>
+          <li class="card">
+            <span class="card-icon" aria-hidden="true">🐧</span>
+            <h3>Sistemas en Linux</h3>
+            <p>Desarrollo y despliegue de sistemas en entornos Linux cuando el proyecto lo requiere, con sólidos conocimientos en administración y uso del sistema.</p>
+          </li>
+          <li class="card">
+            <span class="card-icon" aria-hidden="true">🔧</span>
+            <h3>Mantenimiento de equipos</h3>
+            <p>Instalación, mantenimiento y reparación de computadoras y periféricos para hogar y negocio.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="tecnologias" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title reveal">Tecnologías</h2>
+        <p class="section-intro reveal">Stack habitual en mis proyectos.</p>
+        <ul class="tech-list reveal-stagger">
+          <li><code>Harbour</code> — aplicaciones de escritorio</li>
+          <li><code>SQL Server</code> · <code>SQLite</code> — bases de datos</li>
+          <li><code>Python</code> · <code>PySide</code> — aplicaciones de escritorio</li>
+          <li><code>Flask</code> · <code>pandas</code> — aplicaciones web y datos</li>
+          <li><code>Linux</code> — desarrollo, despliegue y administración de sistemas</li>
+          <li>Consola, ventana o web según requerimiento</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="perfil" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Perfil profesional</h2>
+        <p class="section-intro reveal">Experiencia orientada a soluciones que funcionan en el día a día del negocio.</p>
+        <div class="profile-grid">
+          <div class="profile-main reveal">
+            <p>
+              Programador con amplia trayectoria en el desarrollo de <strong>sistemas administrativos para el sector comercial e industrial</strong>.
+              Mi especialidad son las soluciones prácticas: sistemas que los usuarios realmente usan, que no fallan y que se adaptan a cómo trabaja cada empresa.
+            </p>
+            <p>
+              Trabajo con tecnologías consolidadas como Harbour sobre bases relacionales, y con el ecosistema de Python — según lo que el proyecto necesite, no lo que esté de moda.
+            </p>
+            <p>
+              Además del software, brindo <strong>soporte técnico directo</strong> sobre equipos: instalación, mantenimiento y reparación. Un solo interlocutor para software y hardware.
+            </p>
+            <blockquote class="profile-quote" id="random-quote">
+              <p></p>
+            </blockquote>
+          </div>
+          <dl class="profile-details reveal reveal-right">
+            <div class="profile-detail">
+              <dt>Ubicación</dt>
+              <dd>San Justo, Gran Buenos Aires</dd>
+            </div>
+            <div class="profile-detail">
+              <dt>Modalidad</dt>
+              <dd>Remoto · Presencial (GBA)</dd>
+            </div>
+            <div class="profile-detail">
+              <dt>Proyectos</dt>
+              <dd>Individuales y empresas PyME</dd>
+            </div>
+            <div class="profile-detail">
+              <dt>Soporte</dt>
+              <dd>Post-entrega disponible</dd>
+            </div>
+            <div class="profile-detail">
+              <dt>Estado</dt>
+              <dd>Disponible para proyectos</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contact section-alt">
+      <div class="container">
+        <h2 class="section-title reveal">Contacto</h2>
+        <div class="contact-grid">
+          <p class="contact-intro reveal">
+            ¿Tenés un proyecto en mente o necesitás una consulta técnica? Escribime directamente. Respondo con brevedad y sin rodeos.
+          </p>
+          <ul class="contact-list reveal reveal-right">
+            <li>
+              <a class="contact-item" href="mailto:pedro.m.torres@gmail.com">
+                <span class="contact-label">Email</span>
+                <span>pedro.m.torres@gmail.com</span>
+              </a>
+            </li>
+            <li>
+              <a class="contact-item" href="https://wa.me/5491158945929" target="_blank" rel="noopener noreferrer">
+                <span class="contact-label">WhatsApp</span>
+                <span>+54 11 5894-5929</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Sistemas Torres. Desarrollo de software y soporte técnico.</p>
+      <p class="footer-location">Gran Buenos Aires, Argentina</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

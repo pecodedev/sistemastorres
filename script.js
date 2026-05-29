@@ -47,6 +47,95 @@
     });
   }
 
+  var lightbox = document.getElementById("lightbox");
+  var lightboxImg = document.getElementById("lightbox-img");
+  var lightboxCaption = document.getElementById("lightbox-caption");
+  var lightboxPrev = document.getElementById("lightbox-prev");
+  var lightboxNext = document.getElementById("lightbox-next");
+  var galleryTriggers = Array.prototype.slice.call(document.querySelectorAll(".gallery-trigger"));
+  var currentSlide = 0;
+  var savedScrollY = 0;
+
+  function lockPageScroll() {
+    savedScrollY = window.scrollY;
+    document.body.style.position = "fixed";
+    document.body.style.top = "-" + savedScrollY + "px";
+    document.body.style.left = "0";
+    document.body.style.right = "0";
+    document.body.style.width = "100%";
+  }
+
+  function unlockPageScroll() {
+    document.body.style.position = "";
+    document.body.style.top = "";
+    document.body.style.left = "";
+    document.body.style.right = "";
+    document.body.style.width = "";
+    window.scrollTo(0, savedScrollY);
+  }
+
+  function openLightbox(index) {
+    if (!lightbox) return;
+    showSlide(index);
+    lockPageScroll();
+    if (typeof lightbox.showModal === "function") {
+      lightbox.showModal();
+    }
+  }
+
+  function showSlide(index) {
+    var total = galleryTriggers.length;
+    if (!total || !lightboxImg) return;
+    currentSlide = ((index % total) + total) % total;
+    var btn = galleryTriggers[currentSlide];
+    var thumb = btn.querySelector("img");
+    lightboxImg.src = btn.getAttribute("data-img") || "";
+    lightboxImg.alt = thumb ? thumb.alt : "";
+    if (lightboxCaption) {
+      lightboxCaption.textContent = btn.getAttribute("data-caption") || "";
+    }
+  }
+
+  galleryTriggers.forEach(function (btn, index) {
+    btn.addEventListener("click", function () {
+      openLightbox(index);
+    });
+  });
+
+  if (lightboxPrev) {
+    lightboxPrev.addEventListener("click", function (e) {
+      e.stopPropagation();
+      showSlide(currentSlide - 1);
+    });
+  }
+
+  if (lightboxNext) {
+    lightboxNext.addEventListener("click", function (e) {
+      e.stopPropagation();
+      showSlide(currentSlide + 1);
+    });
+  }
+
+  if (lightbox) {
+    lightbox.addEventListener("close", unlockPageScroll);
+
+    lightbox.addEventListener("click", function (e) {
+      if (e.target === lightbox) {
+        lightbox.close();
+      }
+    });
+
+    lightbox.addEventListener("keydown", function (e) {
+      if (e.key === "ArrowLeft") {
+        e.preventDefault();
+        showSlide(currentSlide - 1);
+      } else if (e.key === "ArrowRight") {
+        e.preventDefault();
+        showSlide(currentSlide + 1);
+      }
+    });
+  }
+
   if (toggle && menu) {
     toggle.addEventListener("click", function () {
       var open = toggle.getAttribute("aria-expanded") === "true";

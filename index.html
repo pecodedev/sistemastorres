@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Sistemas administrativos, aplicaciones web con Flask, facturación y ventas. Harbour, SQL Server, Python, PySide, pandas. Mantenimiento de equipos.">
   <title>Sistemas Torres — Desarrollo y soporte técnico</title>
+  <link rel="icon" href="imgs/logo_big_croped.jpg" type="image/jpeg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&family=Syne:wght@600;700&display=swap" rel="stylesheet">
@@ -13,12 +14,13 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#" class="logo" aria-label="Inicio">
-        <span class="logo-mark">&lt;/&gt;</span>
+      <a href="#" class="logo" aria-label="Inicio — Sistemas Torres">
+        <img class="logo-img" src="imgs/logo_big_croped.jpg" alt="" width="42" height="42">
         <span class="logo-text">Sistemas Torres</span>
       </a>
       <nav class="nav" aria-label="Principal">
         <a href="#servicios">Servicios</a>
+        <a href="#proyectos">Proyectos</a>
         <a href="#tecnologias">Tecnologías</a>
         <a href="#perfil">Perfil</a>
         <a href="#contacto">Contacto</a>
@@ -31,6 +33,7 @@
     </div>
     <div id="nav-menu" class="nav-mobile" hidden>
       <a href="#servicios">Servicios</a>
+      <a href="#proyectos">Proyectos</a>
       <a href="#tecnologias">Tecnologías</a>
       <a href="#perfil">Perfil</a>
       <a href="#contacto">Contacto</a>
@@ -43,12 +46,12 @@
         <div class="hero-content">
           <p class="hero-eyebrow hero-in">Programador · Gran Buenos Aires</p>
           <h1 class="hero-in hero-in-d1">
-            Software que encaja en <span class="hero-accent">tu operación diaria</span>
+            Software que se ajusta a <span class="hero-accent">tu operación diaria</span>
           </h1>
           <p class="hero-lead hero-in hero-in-d2">
             Armo sistemas de facturación, mostrador y gestión — en escritorio, web o Linux —
             con la tecnología que cada caso pide. Si hace falta, también me ocupo de tus equipos:
-            un solo contacto para el programa y el hardware.
+            un solo contacto para el sistema y el hardware.
           </p>
           <div class="hero-actions hero-in hero-in-d3">
             <a class="btn btn-primary" href="#contacto">Consultar proyecto</a>
@@ -56,12 +59,12 @@
           </div>
         </div>
         <aside class="hero-panel hero-in hero-in-d2" aria-label="Resumen de servicios">
-          <p class="hero-panel-title">En la práctica, eso significa</p>
+          <p class="hero-panel-title">En la práctica, esto significa</p>
           <ul class="hero-checklist">
             <li>Facturación y punto de venta</li>
             <li>Sistemas administrativos a medida</li>
-            <li>Apps con Harbour, Python o Flask</li>
-            <li>Linux, datos y soporte de PCs</li>
+            <li>Aplicaciones en Harbour, Python o Flask</li>
+            <li>Linux, Bases de datos y soporte de PCs</li>
           </ul>
         </aside>
       </div>
@@ -108,7 +111,54 @@
       </div>
     </section>
 
-    <section id="tecnologias" class="section section-alt">
+    <section id="proyectos" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title reveal">Sistemas desarrollados</h2>
+        <p class="section-intro reveal">
+          Algunos ejemplos en uso: facturación, mostrador, stock e informes. Hacé clic en una captura para verla en detalle.
+        </p>
+        <ul class="gallery reveal-stagger">
+          <li>
+            <button type="button" class="gallery-trigger" data-img="imgs/capture_02.png" data-caption="PEVENTAS — Sistema de punto de venta">
+              <img src="imgs/capture_02.png" alt="PEVENTAS, pantalla de bienvenida" width="640" height="360" loading="lazy">
+              <span class="gallery-label">Sistema de Punto de venta</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="gallery-trigger" data-img="imgs/capture_01.png" data-caption="PEVENTAS — Menú principal de ventas y gestión">
+              <img src="imgs/capture_01.png" alt="PEVENTAS, menú principal" width="640" height="360" loading="lazy">
+              <span class="gallery-label">PEVENTAS</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="gallery-trigger" data-img="imgs/capture_03.png" data-caption="PEVENTAS — Informes y exportación a Excel">
+              <img src="imgs/capture_03.png" alt="PEVENTAS, reportes a Excel" width="640" height="360" loading="lazy">
+              <span class="gallery-label">Informes Excel</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="gallery-trigger" data-img="imgs/capture_04.png" data-caption="SITO_DEV — Devoluciones e informes estadísticos">
+              <img src="imgs/capture_04.png" alt="SITO_DEV, menú de informes" width="640" height="360" loading="lazy">
+              <span class="gallery-label">Estadísticas</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="gallery-trigger" data-img="imgs/capture_05.png" data-caption="PyVentas — Gestión de artículos con Python">
+              <img src="imgs/capture_05.png" alt="PyVentas, ABM de artículos" width="640" height="360" loading="lazy">
+              <span class="gallery-label">PyVentas</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="gallery-trigger" data-img="imgs/capture_06.png" data-caption="SysVentas — Panel de catálogo y stock">
+              <img src="imgs/capture_06.png" alt="SysVentas, gestión de artículos" width="640" height="360" loading="lazy">
+              <span class="gallery-label">SysVentas</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="tecnologias" class="section">
       <div class="container">
         <h2 class="section-title reveal">Tecnologías</h2>
         <p class="section-intro reveal">Stack habitual en mis proyectos.</p>
@@ -195,10 +245,29 @@
     </section>
   </main>
 
+  <dialog id="lightbox" class="lightbox" aria-label="Vista ampliada de captura">
+    <form method="dialog" class="lightbox-close-form">
+      <button type="submit" class="lightbox-close" aria-label="Cerrar">×</button>
+    </form>
+    <div class="lightbox-body">
+      <button type="button" id="lightbox-prev" class="lightbox-nav lightbox-prev" aria-label="Captura anterior">‹</button>
+      <figure class="lightbox-figure">
+        <div class="lightbox-media">
+          <img id="lightbox-img" src="" alt="">
+        </div>
+        <figcaption id="lightbox-caption"></figcaption>
+      </figure>
+      <button type="button" id="lightbox-next" class="lightbox-nav lightbox-next" aria-label="Captura siguiente">›</button>
+    </div>
+  </dialog>
+
   <footer class="site-footer">
-    <div class="container">
-      <p>&copy; <span id="year"></span> Sistemas Torres. Desarrollo de software y soporte técnico.</p>
-      <p class="footer-location">Gran Buenos Aires, Argentina</p>
+    <div class="container footer-inner">
+      <img class="footer-logo" src="imgs/logo_big_full.jpg" alt="Sistemas Torres — Desarrollo de software a medida" width="220" height="220" loading="lazy">
+      <div class="footer-legal">
+        <p>&copy; <span id="year"></span> Sistemas Torres. Desarrollo de software y soporte técnico.</p>
+        <p class="footer-rights">Todos los derechos reservados.</p>
+      </div>
     </div>
   </footer>
 

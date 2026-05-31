@@ -862,6 +862,35 @@ a.contact-item:hover {
   opacity: 0.95;
 }
 
+.footer-instagram {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+  width: 100%;
+}
+
+.footer-instagram img {
+  display: block;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+.footer-instagram:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(59, 158, 255, 0.06);
+}
+
 .site-footer p {
   margin: 0;
   font-size: 0.9rem;

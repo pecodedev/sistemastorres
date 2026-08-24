@@ -1007,3 +1007,307 @@ a.contact-item:hover {
     transition: none;
   }
 }
+
+/* ============================================================
+   Producto P2Eti ST
+   Usa los mismos tokens del sitio; solo agrega lo que no existe:
+   el visor de peso, la franja de codigo de barras y la grilla
+   de prestaciones.
+   ============================================================ */
+
+/* Visor de peso: reproduce el display de la balanza, que es el
+   dato central del sistema. */
+.p2-visor {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.15rem 1.5rem 1.1rem;
+}
+
+.p2-visor-rotulo {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.p2-peso {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  gap: 0.4rem;
+  margin: 0.25rem 0 0.35rem;
+  font-family: var(--font-logo);
+  font-size: clamp(2.6rem, 8vw, 3.4rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.035em;
+  font-variant-numeric: tabular-nums;
+}
+
+.p2-peso span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0;
+}
+
+.p2-visor-estado {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #4ade80;
+}
+
+.p2-visor-estado::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #4ade80;
+  flex: none;
+}
+
+/* Franja de barras con anchos irregulares, como un simbolo real. */
+.p2-barras {
+  height: 22px;
+  margin-top: 2.5rem;
+  opacity: 0.5;
+  background-image: repeating-linear-gradient(90deg,
+    var(--text) 0 2px, transparent 2px 6px,
+    var(--text) 6px 7px, transparent 7px 10px,
+    var(--text) 10px 14px, transparent 14px 16px,
+    var(--text) 16px 17px, transparent 17px 22px,
+    var(--text) 22px 25px, transparent 25px 27px,
+    var(--text) 27px 31px, transparent 31px 34px,
+    var(--text) 34px 35px, transparent 35px 39px,
+    var(--text) 39px 42px, transparent 42px 44px,
+    var(--text) 44px 48px, transparent 48px 51px,
+    var(--text) 51px 52px, transparent 52px 57px,
+    var(--text) 57px 60px, transparent 60px 62px,
+    var(--text) 62px 66px, transparent 66px 69px);
+}
+
+/* Numero de paso dentro de una .card */
+.p2-paso-num {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin-bottom: 0.55rem;
+}
+
+/* Grilla de prestaciones por area de trabajo */
+.p2-areas {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1.1rem;
+}
+
+@media (min-width: 640px) {
+  .p2-areas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 980px) {
+  .p2-areas {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.p2-area {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.35rem 1.4rem 1.5rem;
+}
+
+.p2-area h3 {
+  margin: 0 0 0.9rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.p2-area ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.p2-area li {
+  position: relative;
+  padding-left: 1.35rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.p2-area li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 7px;
+  height: 7px;
+  border: 1.5px solid var(--accent);
+  border-radius: 2px;
+}
+
+.p2-area li strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Capturas del sistema */
+.p2-capturas {
+  list-style: none;
+  margin: 2rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 1.1rem;
+}
+
+@media (min-width: 760px) {
+  .p2-capturas {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.p2-capturas figure {
+  margin: 0;
+}
+
+.p2-capturas img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-alt);
+}
+
+.p2-capturas figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+/* Nota destacada */
+.p2-nota {
+  margin: 2rem 0 0;
+  padding: 1.05rem 1.3rem;
+  background: var(--accent-glow);
+  border: 1px solid var(--accent-dim);
+  border-radius: var(--radius);
+  font-size: 0.97rem;
+  max-width: 62ch;
+}
+
+/* Tarjeta de producto en la portada */
+.p2-destacado {
+  display: grid;
+  gap: 1.8rem;
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.7rem;
+  margin-top: 1.8rem;
+}
+
+@media (min-width: 860px) {
+  .p2-destacado {
+    grid-template-columns: 1.05fr 1fr;
+    padding: 2rem 2.2rem;
+  }
+}
+
+.p2-destacado-titulo {
+  font-family: var(--font-logo);
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0.35rem 0 0.7rem;
+}
+
+.p2-destacado p {
+  color: var(--text-muted);
+  margin: 0 0 1.1rem;
+}
+
+.p2-destacado .hero-checklist {
+  margin-bottom: 1.4rem;
+}
+
+.p2-destacado img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.p2-etiqueta-muestra {
+  background: #ffffff;
+  border-radius: var(--radius);
+  padding: 0.9rem;
+  border: 1px solid var(--border);
+}
+
+.p2-etiqueta-muestra img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 0;
+  border-radius: 4px;
+}
+
+/* El hero de una pagina de producto no necesita el gran respiro de la
+   portada: el protagonista es el visor de peso, no el logo de fondo. */
+.hero.p2-hero {
+  padding: 6.5rem 0 5.5rem;
+}
+
+.hero.p2-hero::before {
+  display: none;
+}
+
+@media (max-width: 899px) {
+  .hero.p2-hero {
+    padding: 4rem 0 3.5rem;
+  }
+}
+
+/* Los tres pasos entran en una sola fila en pantallas anchas. */
+@media (min-width: 900px) {
+  .cards.p2-cards-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Las capturas llevan atributos width/height para que el navegador reserve el
+   espacio antes de descargarlas. Sin `height: auto` ese atributo fija la altura
+   real y el `aspect-ratio` del contenedor no llega a aplicarse: la imagen se
+   muestra ampliada y recortada en lugar de entrar entera. */
+.gallery-trigger img {
+  height: auto;
+}

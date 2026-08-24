@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="P2Eti ST: sistema de pesaje, etiquetado e impresión para plantas que despachan por kilo. Lee el peso de la balanza, arma el código de barras e imprime la etiqueta.">
+  <title>P2Eti ST — Pesaje y etiquetado | Sistemas Torres</title>
+  <link rel="icon" href="imgs/logo_big_croped.jpg" type="image/jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&family=Syne:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Inicio — Sistemas Torres">
+        <img class="logo-img" src="imgs/logo_big_croped.jpg" alt="" width="42" height="42">
+        <span class="logo-text">Sistemas Torres</span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="index.html#servicios">Servicios</a>
+        <a href="index.html#productos">Productos</a>
+        <a href="index.html#proyectos">Proyectos</a>
+        <a href="index.html#tecnologias">Tecnologías</a>
+        <a href="index.html#perfil">Perfil</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="nav-menu" class="nav-mobile" hidden>
+      <a href="index.html#servicios">Servicios</a>
+      <a href="index.html#productos">Productos</a>
+      <a href="index.html#proyectos">Proyectos</a>
+      <a href="index.html#tecnologias">Tecnologías</a>
+      <a href="index.html#perfil">Perfil</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero p2-hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="hero-eyebrow hero-in">Producto propio · Windows</p>
+          <h1 class="hero-in hero-in-d1">
+            P2Eti&nbsp;ST — pesaje y etiquetado para <span class="hero-accent">despacho por kilo</span>
+          </h1>
+          <p class="hero-lead hero-in hero-in-d2">
+            Toma el peso directamente de la balanza, completa los datos del producto,
+            arma el código de barras e imprime la etiqueta. El operario elige el
+            producto y apoya la mercadería: el resto lo hace el sistema.
+          </p>
+          <div class="hero-actions hero-in hero-in-d3">
+            <a class="btn btn-primary" href="#contacto">Pedir una demostración</a>
+            <a class="btn btn-ghost" href="#prestaciones">Ver prestaciones</a>
+          </div>
+        </div>
+        <aside class="hero-panel hero-in hero-in-d2" aria-label="Lectura de la balanza">
+          <div class="p2-visor">
+            <p class="p2-visor-rotulo">Peso neto</p>
+            <p class="p2-peso">12,345<span>kg</span></p>
+            <p class="p2-visor-estado">Peso estable</p>
+          </div>
+          <p class="hero-panel-title" style="margin-top:1.2rem">Pensado para</p>
+          <ul class="hero-checklist">
+            <li>Frigoríficos y salas de despostado</li>
+            <li>Distribuidoras de alimentos</li>
+            <li>Depósitos que despachan por peso</li>
+          </ul>
+        </aside>
+      </div>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-alt" aria-hidden="true"></div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="p2-barras reveal" aria-hidden="true"></div>
+        <h2 class="section-title reveal" style="margin-top:2.2rem">Cómo se trabaja</h2>
+        <p class="section-intro reveal">
+          Tres pasos por etiqueta. Sin planillas intermedias ni pesos anotados a mano.
+        </p>
+        <ul class="cards p2-cards-3 reveal-stagger">
+          <li class="card">
+            <span class="p2-paso-num">PASO 01</span>
+            <h3>Pesar</h3>
+            <p>El peso llega solo desde la balanza y queda fijado cuando se estabiliza.
+               No se tipea ni se copia a mano.</p>
+          </li>
+          <li class="card">
+            <span class="p2-paso-num">PASO 02</span>
+            <h3>Completar</h3>
+            <p>Al elegir el producto se cargan su tara, sus unidades, su proveedor y la
+               fecha de vencimiento. Sólo se agrega el lote y la caja.</p>
+          </li>
+          <li class="card">
+            <span class="p2-paso-num">PASO 03</span>
+            <h3>Imprimir</h3>
+            <p>La etiqueta se ve en pantalla tal cual va a salir y se manda a la
+               impresora con una tecla.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title reveal">Por qué es distinto</h2>
+        <p class="section-intro reveal">
+          Cuatro decisiones de fondo, tomadas para que no se pare la producción.
+        </p>
+        <ul class="cards reveal-stagger">
+          <li class="card">
+            <span class="card-icon" aria-hidden="true">🖨</span>
+            <h3>No depende de otros programas</h3>
+            <p>La etiqueta se dibuja directamente sobre la impresora. No usa Acrobat,
+               ni Word, ni Excel para imprimir: si Windows ve la impresora, el sistema
+               imprime.</p>
+          </li>
+          <li class="card">
+            <span class="card-icon" aria-hidden="true">📐</span>
+            <h3>El diseño de la etiqueta lo cambia usted</h3>
+            <p>El formato vive en una planilla de Excel. Mover un dato, agrandar el
+               nombre del producto o sumar un texto legal no requiere llamar al
+               programador.</p>
+          </li>
+          <li class="card">
+            <span class="card-icon" aria-hidden="true">⚡</span>
+            <h3>Abre al instante</h3>
+            <p>No necesita instalación ni permisos de administrador. Se copia la
+               carpeta, se hace doble clic y arranca en menos de un segundo.</p>
+          </li>
+          <li class="card">
+            <span class="card-icon" aria-hidden="true">🔌</span>
+            <h3>Funciona sin internet</h3>
+            <p>Todos los datos quedan en la propia máquina, en un archivo que se puede
+               respaldar cuando quiera. No hay servicio mensual ni dependencia de la
+               nube.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="prestaciones" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Prestaciones</h2>
+        <p class="section-intro reveal">Qué incluye el sistema, por área de trabajo.</p>
+
+        <ul class="p2-areas reveal-stagger">
+          <li class="p2-area">
+            <h3>Balanza</h3>
+            <ul>
+              <li>Conexión por <strong>puerto serie RS-232 o USB</strong></li>
+              <li>Preajustes para <strong>Systel</strong> y <strong>Kretz</strong>; otras marcas se configuran indicando los parámetros</li>
+              <li>Admite balanzas que responden a pedido y balanzas de transmisión continua</li>
+              <li><strong>Detección de peso estable</strong>: la lectura se fija sola cuando el fiel se aquieta</li>
+              <li>Velocidad de lectura regulable</li>
+              <li>Consola de diagnóstico para poner a punto una balanza nueva</li>
+            </ul>
+          </li>
+
+          <li class="p2-area">
+            <h3>Etiqueta</h3>
+            <ul>
+              <li><strong>Diseño en una planilla de Excel</strong>, sin programar</li>
+              <li>Se respetan tipografías, tamaños, colores, bordes y celdas combinadas</li>
+              <li>Logo e imágenes propias</li>
+              <li>Códigos <strong>Code 128</strong> y <strong>EAN-13</strong></li>
+              <li>Código de barras armado solo, combinando producto, peso y proveedor</li>
+              <li><strong>Vista previa en vivo</strong>: lo que se ve es lo que se imprime</li>
+            </ul>
+          </li>
+
+          <li class="p2-area">
+            <h3>Impresión</h3>
+            <ul>
+              <li>Cualquier impresora instalada en Windows: <strong>térmica, láser o chorro de tinta</strong></li>
+              <li>Impresora predeterminada configurable</li>
+              <li>Medida de etiqueta, orientación y márgenes a gusto</li>
+              <li>Cantidad de copias por etiqueta</li>
+              <li>Página de prueba para calibrar el rollo</li>
+              <li>Copia en PDF opcional, para archivo</li>
+            </ul>
+          </li>
+
+          <li class="p2-area">
+            <h3>Productos y proveedores</h3>
+            <ul>
+              <li>Catálogo con <strong>código, tara, vida útil, unidades por bulto y proveedor</strong></li>
+              <li>Búsqueda instantánea por código o nombre</li>
+              <li>Cálculo automático de <strong>peso bruto, neto y tara</strong></li>
+              <li>Fecha de vencimiento calculada según la vida útil del producto</li>
+              <li>Alta, baja y modificación desde la propia pantalla</li>
+              <li>Exportación del catálogo a Excel</li>
+            </ul>
+          </li>
+
+          <li class="p2-area">
+            <h3>Historial y reportes</h3>
+            <ul>
+              <li>Registro de <strong>cada etiqueta impresa</strong> con su peso, lote, caja y hora</li>
+              <li>Filtros por día, semana, mes o período a elección</li>
+              <li>Totales de etiquetas, kilos y productos distintos</li>
+              <li><strong>Resumen por producto</strong> para control de producción</li>
+              <li>Exportación a Excel</li>
+              <li>Depuración de períodos ya cerrados</li>
+            </ul>
+          </li>
+
+          <li class="p2-area">
+            <h3>Sistema</h3>
+            <ul>
+              <li><strong>Portable</strong>: no requiere instalación</li>
+              <li>Tema <strong>claro y oscuro</strong>, y tamaño de letra regulable</li>
+              <li>Atajos de teclado para trabajar sin mouse</li>
+              <li><strong>Respaldo de la base</strong> con un clic</li>
+              <li>Importa productos, proveedores e historial desde sistemas anteriores en Excel</li>
+              <li>Registro de novedades que agiliza el soporte</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title reveal" id="capturas">El sistema por dentro</h2>
+        <p class="section-intro reveal">
+          Capturas de la aplicación en funcionamiento. Hacé clic para verlas en detalle.
+        </p>
+        <ul class="gallery reveal-stagger">
+          <li>
+            <button type="button" class="gallery-trigger" data-img="imgs/p2eti_principal.png" data-caption="P2Eti ST — Pantalla de trabajo: peso, datos y vista previa de la etiqueta">
+              <img src="imgs/p2eti_principal.png" alt="Pantalla principal de P2Eti ST con el peso de la balanza y la vista previa de la etiqueta" width="1420" height="900" loading="lazy">
+              <span class="gallery-label">Pantalla de trabajo</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="gallery-trigger" data-img="imgs/p2eti_productos.png" data-caption="P2Eti ST — Catálogo de productos con tara, vida útil y unidades">
+              <img src="imgs/p2eti_productos.png" alt="Catálogo de productos de P2Eti ST" width="1420" height="900" loading="lazy">
+              <span class="gallery-label">Catálogo</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="gallery-trigger" data-img="imgs/p2eti_historial.png" data-caption="P2Eti ST — Historial de etiquetas impresas con totales por período">
+              <img src="imgs/p2eti_historial.png" alt="Historial de etiquetas impresas con totales de kilos" width="1420" height="900" loading="lazy">
+              <span class="gallery-label">Historial y totales</span>
+            </button>
+          </li>
+        </ul>
+
+        <ul class="p2-capturas reveal" style="grid-template-columns:1fr;max-width:44rem;margin-inline:auto">
+          <li>
+            <figure>
+              <div class="p2-etiqueta-muestra">
+                <img src="imgs/p2eti_etiqueta.png" alt="Etiqueta impresa de 150 x 100 mm con nombre del producto, pesos, fechas, lote y código de barras" width="1417" height="944" loading="lazy">
+              </div>
+              <figcaption>Etiqueta de 150 × 100 mm generada por el sistema. El diseño se
+                edita en una planilla de Excel, sin tocar el programa.</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Requisitos</h2>
+        <p class="section-intro reveal">Lo que hace falta para ponerlo en marcha.</p>
+        <div class="profile-grid">
+          <div class="profile-main reveal">
+            <p>
+              P2Eti ST corre en la misma PC que ya usa el sector de despacho. No pide
+              servidor, ni base de datos instalada, ni conexión a internet.
+            </p>
+            <p>
+              La puesta en marcha incluye la conexión con la balanza, la carga inicial
+              del catálogo y el diseño de la primera etiqueta con el formato que usa
+              su empresa.
+            </p>
+            <p class="p2-nota">
+              La licencia se habilita por equipo. Si mañana cambia la computadora, se
+              emite una licencia nueva sin costo de software.
+            </p>
+          </div>
+          <dl class="profile-details reveal reveal-right">
+            <div class="profile-detail">
+              <dt>Equipo</dt>
+              <dd>PC con Windows 10 o superior</dd>
+            </div>
+            <div class="profile-detail">
+              <dt>Balanza</dt>
+              <dd>Con salida serie RS-232 o USB</dd>
+            </div>
+            <div class="profile-detail">
+              <dt>Impresora</dt>
+              <dd>Cualquiera instalada en Windows</dd>
+            </div>
+            <div class="profile-detail">
+              <dt>Conexión</dt>
+              <dd>No necesita internet</dd>
+            </div>
+            <div class="profile-detail">
+              <dt>Instalación</dt>
+              <dd>Se copia la carpeta y listo</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contact section-alt">
+      <div class="container">
+        <h2 class="section-title reveal">¿Lo vemos funcionando con tus productos?</h2>
+        <div class="contact-grid">
+          <p class="contact-intro reveal">
+            Preparamos una demostración con tu catálogo y tu etiqueta, para que veas el
+            sistema con tus propios datos antes de decidir. Escribime y coordinamos.
+          </p>
+          <ul class="contact-list reveal reveal-right">
+            <li>
+              <a class="contact-item" href="mailto:sistemastorres.info@gmail.com?subject=Consulta%20por%20P2Eti%20ST">
+                <span class="contact-label">Email</span>
+                <span>sistemastorres.info@gmail.com</span>
+              </a>
+            </li>
+            <li>
+              <a class="contact-item" href="https://wa.me/5491158945929?text=Hola,%20quer%C3%ADa%20consultar%20por%20P2Eti%20ST" target="_blank" rel="noopener noreferrer">
+                <span class="contact-label">WhatsApp</span>
+                <span>+54 9 11 5894-5929</span>
+              </a>
+            </li>
+            <li>
+              <a class="footer-instagram" href="https://www.instagram.com/sistemastorres/" target="_blank" rel="noopener noreferrer">
+                <img src="imgs/logo_instagram.png" alt="" width="28" height="28" loading="lazy">
+                <span>@sistemastorres</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="lightbox" class="lightbox" aria-label="Vista ampliada de captura">
+    <form method="dialog" class="lightbox-close-form">
+      <button type="submit" class="lightbox-close" aria-label="Cerrar">×</button>
+    </form>
+    <div class="lightbox-body">
+      <button type="button" id="lightbox-prev" class="lightbox-nav lightbox-prev" aria-label="Captura anterior">‹</button>
+      <figure class="lightbox-figure">
+        <div class="lightbox-media">
+          <img id="lightbox-img" src="" alt="">
+        </div>
+        <figcaption id="lightbox-caption"></figcaption>
+      </figure>
+      <button type="button" id="lightbox-next" class="lightbox-nav lightbox-next" aria-label="Captura siguiente">›</button>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img class="footer-logo" src="imgs/logo_big_full.jpg" alt="Sistemas Torres — Desarrollo de software a medida" width="220" height="220" loading="lazy">
+      <div class="footer-legal">
+        <p>&copy; <span id="year"></span> Sistemas Torres. Desarrollo de software y soporte técnico.</p>
+        <p class="footer-rights">P2Eti ST versión 1.0.0 — Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

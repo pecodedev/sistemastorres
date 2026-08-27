@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="La página que buscabas no existe. Volvé al inicio de Sistemas Torres.">
+  <meta name="robots" content="noindex">
+  <title>Página no encontrada — Sistemas Torres</title>
+  <meta name="theme-color" content="#0c0f14">
+  <!-- Rutas absolutas: GitHub Pages sirve este archivo desde cualquier profundidad de URL. -->
+  <link rel="icon" href="/imgs/logo_big_croped.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="/styles.css">
+  <noscript>
+    <!-- Las animaciones de entrada arrancan en opacity:0 y las revela el JS.
+         Sin JS el contenido debe verse igual. -->
+    <style>
+      .reveal,
+      .reveal-stagger > * {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    </style>
+  </noscript>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo" aria-label="Inicio — Sistemas Torres">
+        <img class="logo-img" src="/imgs/logo_big_croped.jpg" alt="" width="42" height="42">
+        <span class="logo-text">Sistemas Torres</span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="/#servicios">Servicios</a>
+        <a href="/#productos">Productos</a>
+        <a href="/#proyectos">Proyectos</a>
+        <a href="/#tecnologias">Tecnologías</a>
+        <a href="/#perfil">Perfil</a>
+        <a href="/#contacto">Contacto</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="nav-menu" class="nav-mobile" hidden>
+      <a href="/#servicios">Servicios</a>
+      <a href="/#productos">Productos</a>
+      <a href="/#proyectos">Proyectos</a>
+      <a href="/#tecnologias">Tecnologías</a>
+      <a href="/#perfil">Perfil</a>
+      <a href="/#contacto">Contacto</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero p2-hero">
+      <div class="container">
+        <p class="hero-eyebrow">Error 404</p>
+        <h1>Esta página no existe</h1>
+        <p class="hero-lead">
+          Puede que el enlace esté viejo o que la dirección tenga un error de tipeo.
+          Desde el inicio llegás a todo el sitio.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/">Ir al inicio</a>
+          <a class="btn btn-ghost" href="/#contacto">Escribirme</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img class="footer-logo" src="/imgs/logo_big_full.jpg" alt="Sistemas Torres — Desarrollo de software a medida" width="220" height="220" loading="lazy">
+      <div class="footer-legal">
+        <p>&copy; <span id="year"></span> Sistemas Torres. Desarrollo de software y soporte técnico.</p>
+        <p class="footer-rights">Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>

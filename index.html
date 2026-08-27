@@ -1,15 +1,38 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-AR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Sistemas administrativos, aplicaciones web con Flask, facturación y ventas. Harbour, SQL Server, Python, PySide, pandas. Mantenimiento de equipos.">
   <title>Sistemas Torres — Desarrollo y soporte técnico</title>
+  <link rel="canonical" href="https://sistemastorres.com/">
+  <meta name="theme-color" content="#0c0f14">
   <link rel="icon" href="imgs/logo_big_croped.jpg" type="image/jpeg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&family=Syne:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Vista previa al compartir el enlace (WhatsApp, redes) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sistemas Torres">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:url" content="https://sistemastorres.com/">
+  <meta property="og:title" content="Sistemas Torres — Desarrollo y soporte técnico">
+  <meta property="og:description" content="Sistemas de facturación, mostrador y gestión — en escritorio, web o Linux. Desarrollo a medida y soporte de equipos en el Gran Buenos Aires.">
+  <meta property="og:image" content="https://sistemastorres.com/imgs/og_sistemastorres.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Sistemas Torres — Desarrollo de software a medida">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="styles.css">
+  <noscript>
+    <!-- Las animaciones de entrada arrancan en opacity:0 y las revela el JS.
+         Sin JS el contenido debe verse igual. -->
+    <style>
+      .reveal,
+      .reveal-stagger > * {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    </style>
+  </noscript>
 </head>
 <body>
   <header class="site-header">
@@ -157,38 +180,38 @@
         </p>
         <ul class="gallery reveal-stagger">
           <li>
-            <button type="button" class="gallery-trigger" data-img="imgs/capture_02.png" data-caption="PEVENTAS — Sistema de punto de venta">
-              <img src="imgs/capture_02.png" alt="PEVENTAS, pantalla de bienvenida" width="640" height="360" loading="lazy">
-              <span class="gallery-label">Sistema de Punto de venta</span>
+            <button type="button" class="gallery-trigger" data-img="imgs/peventas_01.webp" data-caption="PEVENTAS — Venta en curso: artículos, totales y forma de pago">
+              <img src="imgs/peventas_01_thumb.webp" alt="PEVENTAS, venta en curso con totales y forma de pago" width="720" height="450" loading="lazy">
+              <span class="gallery-label">Punto de venta</span>
             </button>
           </li>
           <li>
-            <button type="button" class="gallery-trigger" data-img="imgs/capture_01.png" data-caption="PEVENTAS — Menú principal de ventas y gestión">
-              <img src="imgs/capture_01.png" alt="PEVENTAS, menú principal" width="640" height="360" loading="lazy">
+            <button type="button" class="gallery-trigger" data-img="imgs/peventas_02.webp" data-caption="PEVENTAS — Menú principal e informes disponibles">
+              <img src="imgs/peventas_02_thumb.webp" alt="PEVENTAS, menú de informes y consultas" width="720" height="450" loading="lazy">
               <span class="gallery-label">PEVENTAS</span>
             </button>
           </li>
           <li>
-            <button type="button" class="gallery-trigger" data-img="imgs/capture_03.png" data-caption="PEVENTAS — Informes y exportación a Excel">
-              <img src="imgs/capture_03.png" alt="PEVENTAS, reportes a Excel" width="640" height="360" loading="lazy">
+            <button type="button" class="gallery-trigger" data-img="imgs/peventas_03.webp" data-caption="PEVENTAS — Informes y exportación a Excel">
+              <img src="imgs/peventas_03_thumb.webp" alt="PEVENTAS, informe de ventas por artículo exportándose a Excel" width="720" height="450" loading="lazy">
               <span class="gallery-label">Informes Excel</span>
             </button>
           </li>
           <li>
-            <button type="button" class="gallery-trigger" data-img="imgs/capture_04.png" data-caption="SITO_DEV — Devoluciones e informes estadísticos">
-              <img src="imgs/capture_04.png" alt="SITO_DEV, menú de informes" width="640" height="360" loading="lazy">
-              <span class="gallery-label">Estadísticas</span>
+            <button type="button" class="gallery-trigger" data-img="imgs/p2eti_principal.webp" data-caption="P2Eti ST — Pesaje, etiquetado e impresión">
+              <img src="imgs/p2eti_principal_thumb.webp" alt="P2Eti ST, pantalla de trabajo con el peso de la balanza y la etiqueta" width="720" height="450" loading="lazy">
+              <span class="gallery-label">P2Eti ST</span>
             </button>
           </li>
           <li>
-            <button type="button" class="gallery-trigger" data-img="imgs/capture_05.png" data-caption="PyVentas — Gestión de artículos con Python">
-              <img src="imgs/capture_05.png" alt="PyVentas, ABM de artículos" width="640" height="360" loading="lazy">
+            <button type="button" class="gallery-trigger" data-img="imgs/capture_05.webp" data-caption="PyVentas — Gestión de artículos con Python">
+              <img src="imgs/capture_05_thumb.webp" alt="PyVentas, ABM de artículos" width="720" height="450" loading="lazy">
               <span class="gallery-label">PyVentas</span>
             </button>
           </li>
           <li>
-            <button type="button" class="gallery-trigger" data-img="imgs/capture_06.png" data-caption="SysVentas — Panel de catálogo y stock">
-              <img src="imgs/capture_06.png" alt="SysVentas, gestión de artículos" width="640" height="360" loading="lazy">
+            <button type="button" class="gallery-trigger" data-img="imgs/capture_06.webp" data-caption="SysVentas — Panel de catálogo y stock">
+              <img src="imgs/capture_06_thumb.webp" alt="SysVentas, gestión de artículos" width="720" height="450" loading="lazy">
               <span class="gallery-label">SysVentas</span>
             </button>
           </li>
@@ -278,9 +301,16 @@
               </a>
             </li>
             <li>
-              <a class="footer-instagram" href="https://www.instagram.com/sistemastorres/" target="_blank" rel="noopener noreferrer">
-                <img src="imgs/logo_instagram.png" alt="" width="28" height="28" loading="lazy">
-                <span>@sistemastorres</span>
+              <a class="contact-item" href="https://www.instagram.com/sistemastorres/" target="_blank" rel="noopener noreferrer">
+                <span class="contact-label">Instagram</span>
+                <span class="contact-value">
+                  <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                    <rect x="2.6" y="2.6" width="18.8" height="18.8" rx="5.4" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                    <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                    <circle cx="17.4" cy="6.6" r="1.25" fill="currentColor"/>
+                  </svg>
+                  <span>@sistemastorres</span>
+                </span>
               </a>
             </li>
           </ul>
@@ -316,5 +346,40 @@
   </footer>
 
   <script src="script.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Sistemas Torres",
+    "description": "Desarrollo de sistemas de facturación, mostrador y gestión para escritorio, web y Linux. Soporte técnico y mantenimiento de equipos.",
+    "url": "https://sistemastorres.com/",
+    "image": "https://sistemastorres.com/imgs/og_sistemastorres.jpg",
+    "logo": "https://sistemastorres.com/imgs/logo_big_full.jpg",
+    "telephone": "+5491158945929",
+    "email": "sistemastorres.info@gmail.com",
+    "priceRange": "$$",
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Gran Buenos Aires, Argentina"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Pedro Torres",
+      "jobTitle": "Programador"
+    },
+    "sameAs": ["https://www.instagram.com/sistemastorres/"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Servicios",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sistemas de facturación y punto de venta" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sistemas administrativos a medida" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Aplicaciones web con Flask" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Soporte técnico y mantenimiento de equipos" } }
+      ]
+    }
+  }
+  </script>
 </body>
 </html>

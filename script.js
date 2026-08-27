@@ -76,11 +76,12 @@
 
   function openLightbox(index) {
     if (!lightbox) return;
+    // Sin soporte de <dialog> no hay overlay que mostrar: si bloquearamos el
+    // scroll antes de comprobarlo, la pagina quedaria trabada sin ventana.
+    if (typeof lightbox.showModal !== "function") return;
     showSlide(index);
     lockPageScroll();
-    if (typeof lightbox.showModal === "function") {
-      lightbox.showModal();
-    }
+    lightbox.showModal();
   }
 
   function showSlide(index) {
@@ -137,16 +138,19 @@
   }
 
   if (toggle && menu) {
+    function setMenu(abierto) {
+      toggle.setAttribute("aria-expanded", abierto ? "true" : "false");
+      toggle.setAttribute("aria-label", abierto ? "Cerrar menú" : "Abrir menú");
+      menu.hidden = !abierto;
+    }
+
     toggle.addEventListener("click", function () {
-      var open = toggle.getAttribute("aria-expanded") === "true";
-      toggle.setAttribute("aria-expanded", open ? "false" : "true");
-      menu.hidden = open;
+      setMenu(toggle.getAttribute("aria-expanded") !== "true");
     });
 
     menu.querySelectorAll("a").forEach(function (link) {
       link.addEventListener("click", function () {
-        toggle.setAttribute("aria-expanded", "false");
-        menu.hidden = true;
+        setMenu(false);
       });
     });
   }
